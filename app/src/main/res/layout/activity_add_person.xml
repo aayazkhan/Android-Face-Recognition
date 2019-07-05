@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.transo.facerecognition.Activities.AddPersonActivity">
+
+        <EditText
+            android:id="@+id/txt_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <ToggleButton
+            android:id="@+id/btnTrainingTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_Name"
+            android:layout_centerInParent="true"
+            android:checked="false"
+            android:textOff="Training"
+            android:textOn="Test" />
+
+        <ToggleButton
+            android:id="@+id/btnReferenceDeviation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnTrainingTest"
+            android:layout_centerInParent="true"
+            android:checked="false"
+            android:enabled="false"
+            android:textOff="Reference"
+            android:textOn="Deviation" />
+
+        <ToggleButton
+            android:id="@+id/btnTimeManually"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnReferenceDeviation"
+            android:layout_centerInParent="true"
+            android:checked="false"
+            android:textOff="Time"
+            android:textOn="Manually" />
+
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnTimeManually"
+            android:layout_centerInParent="true"
+            android:text="Start" />
+    </LinearLayout>
+</RelativeLayout>
